@@ -69,8 +69,8 @@ Dự án được xây dựng nhằm mục đích nghiên cứu và giáo dục,
   <img src="readme_assets/screenshots/register.png" alt="Register" width="49%"><br>
   <img src="readme_assets/screenshots/dashboard.png" alt="Dashboard" width="49%">
   <img src="readme_assets/screenshots/update_profile.png" alt="Update Profile" width="49%">
+  <em>Giao diện máy chủ Command &amp; Control</em>
 </p>
-<p align="center"><em>Giao diện máy chủ Command &amp; Control</em></p>
 
 
 <h2 id="mien-tru-trach-nhiem">⚠️ Miễn Trừ Trách Nhiệm</h2>
