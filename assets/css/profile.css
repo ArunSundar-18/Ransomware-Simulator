@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
+    color: #db0e15;
+    font-size: 18px;
+    text-shadow: 0 0 5px rgba(219, 14, 21, 0.8);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.animate-on-load::after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(163, 7, 12, 0.1);
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker .15s infinite, steady 3s;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.9;
+    }
+    5% {
+        opacity: 0.3;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0.95;
+    }
+}
+
+@keyframes steady {
+    from {
+        background: rgba(219, 14, 21, 0.12);
+    }
+    to {
+        background: rgba(80, 10, 10, 0.1);
+    }
+}
+
+.profile-management {
+    background: linear-gradient(135deg, rgba(40, 0, 0, 0.8), rgba(70, 10, 10, 0.3));
+    padding: 20px;
+    border-radius: 0;
+    border-left: 4px solid #db0e15;
+    border-right: 1px solid rgba(219, 14, 21, 0.3);
+    border-top: 1px solid rgba(219, 14, 21, 0.3);
+    border-bottom: 1px solid rgba(219, 14, 21, 0.3);
+    box-shadow: 
+        -6px 0 20px rgba(219, 14, 21, 0.4),
+        0 0 10px rgba(255, 0, 50, 0.1),
+        inset 0 0 20px rgba(255, 0, 50, 0.05);
+    max-width: 500px;
+    width: 90%;
+    max-height: 95vh;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: brightness(1.1);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.profile-management::-webkit-scrollbar {
+    width: 6px;
+}
+
+.profile-management::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.profile-management::-webkit-scrollbar-thumb {
+    background: #db0e15;
+    border-radius: 3px;
+}
+
+.profile-management:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+        -8px 0 25px rgba(219, 14, 21, 0.6),
+        0 0 15px rgba(255, 0, 50, 0.15),
+        inset 0 0 25px rgba(255, 0, 50, 0.1);
+}
+
+.profile-management h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #db0e15;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px #db0e15, 0 0 10px #ff0033, 0 0 20px #ff0033;
+    border-bottom: 2px solid #db0e15;
+    padding-bottom: 8px;
+    animation: glitch-red 2s infinite;
+    flex-shrink: 0;
+}
+
+@keyframes glitch-red {
+    0% {
+        text-shadow: 2px 0 #ff0033, -2px 0 #660000;
+    }
+    20% {
+        text-shadow: -2px 0 #ff0033, 2px 0 #330000;
+    }
+    40% {
+        text-shadow: 2px 0 #ff0033, -2px 0 #990000;
+    }
+    60% {
+        text-shadow: -1px 0 #ff0033, 1px 0 #330000;
+    }
+    80% {
+        text-shadow: 2px 0 #ff0033, -2px 0 #330000;
+    }
+    100% {
+        text-shadow: -2px 0 #ff0033, 2px 0 #990000;
+    }
+}
+
+.profile-management label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #db0e15;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px #db0e15;
+    font-size: 12px;
+}
+
+.profile-management .input-container {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.profile-management img {
+    display: block;
+    margin: 8px auto 12px auto;
+    max-width: 80px;
+    border-radius: 50%;
+    border: 2px solid #db0e15;
+    box-shadow: 0 0 8px #db0e15, 0 0 16px #ff0033;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-management img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #db0e15, 0 0 24px #ff0033;
+}
+
+.profile-management input[type="text"], 
+.profile-management input[type="password"], 
+.profile-management input[type="file"] {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(219, 14, 21, 0.6);
+    border-radius: 0;
+    font-size: 14px;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #db0e15;
+    text-shadow: 0 0 2px #db0e15;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 4px rgba(255, 0, 50, 0.1);
+    box-sizing: border-box;
+}
+
+.profile-management input[type="text"]:focus, 
+.profile-management input[type="password"]:focus, 
+.profile-management input[type="file"]:focus {
+    border-color: #db0e15;
+    box-shadow: 0 0 8px rgba(219, 14, 21, 0.5), inset 0 0 8px rgba(255, 0, 50, 0.1);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 4px #db0e15;
+}
+
+.profile-management #show-password {
+    margin-left: 0;
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    accent-color: #db0e15;
+}
+
+.profile-management #show-password + label,
+.profile-management label[for="show-password"] {
+    display: inline;
+    margin-bottom: 0;
+    color: #db0e15;
+    text-shadow: 0 0 2px #db0e15;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.profile-management input[type="submit"] {
+    width: 100%;
+    background-color: rgba(219, 14, 21, 0.15);
+    color: #db0e15;
+    border: 1px solid #db0e15;
+    padding: 12px 24px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    text-shadow: 0 0 3px #db0e15;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px rgba(255, 0, 50, 0.1);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.profile-management input[type="submit"]:hover, 
+.profile-management input[type="submit"]:focus {
+    background-color: #db0e15;
+    color: #000;
+    box-shadow: 0 0 12px #db0e15, 0 0 20px rgba(255, 0, 50, 0.3);
+    text-shadow: none;
+    transform: translateY(-1px);
+}
+
+.alert {
+    padding: 10px 15px;
+    border-radius: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.alert-info {
+    background-color: rgba(219, 14, 21, 0.2);
+    border: 1px solid #db0e15;
+    color: #db0e15;
+    text-shadow: 0 0 3px #db0e15;
+    box-shadow: 0 0 8px rgba(255, 0, 50, 0.2);
+}
+
+.profile-management a.btn {
+    display: block;
+    text-align: center;
+    padding: 12px 24px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(219, 14, 21, 0.15);
+    color: #db0e15;
+    border: 1px solid #db0e15;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #db0e15;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px rgba(255, 0, 50, 0.1);
+}
+
+.profile-management a.btn:hover {
+    background-color: #db0e15;
+    color: #000;
+    text-shadow: none;
+    box-shadow: 0 0 12px #db0e15;
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.profile-management input[type="file"] {
+    color: #db0e15;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px;
+    font-size: 12px;
+}
+
+.profile-management input[type="file"]::-webkit-file-upload-button {
+    background-color: rgba(219, 14, 21, 0.15);
+    color: #db0e15;
+    border: 1px solid #db0e15;
+    padding: 5px 10px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 8px;
+}
+
+.profile-management input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #db0e15;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .profile-management {
+        padding: 15px;
+        max-width: 95%;
+        max-height: 98vh;
+    }
+    
+    .profile-management h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .profile-management input[type="text"], 
+    .profile-management input[type="password"], 
+    .profile-management input[type="file"] {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .profile-management img {
+        max-width: 60px;
+        margin: 5px auto 8px auto;
+    }
+}
+
+@media (max-height: 600px) {
+    .profile-management {
+        padding: 10px;
+        max-height: 98vh;
+    }
+    
+    .profile-management h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+    }
+    
+    .profile-management .input-container {
+        margin-bottom: 8px;
+    }
+    
+    .profile-management label {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+    
+    .profile-management input[type="text"], 
+    .profile-management input[type="password"], 
+    .profile-management input[type="file"] {
+        padding: 5px 8px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .profile-management img {
+        max-width: 50px;
+        margin: 3px auto 5px auto;
+    }
+}
+
+::selection {
+    background: #020F01;
+    color: #00FF00 !important;
+}
